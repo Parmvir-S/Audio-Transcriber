@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcriber</title>
+    <link rel= "stylesheet" href="{{ url_for('static', filename='styles/index.css') }}"/>
+</head>
+<body>
+    <div id="speechContainer">
+        <h1>Audio Transcriber</h1>
+        <form method="POST" enctype="multipart/form-data"> <!--this is for file uploading-->
+            <input id="file" type="file" name="file"/>
+            <br/>
+            <input id="submit" type="submit" value="Transcribe"/>
+        </form>
+        
+        {% if transcript != "" %}
+        <div id="speechTranscriptContainer">
+            <h1>Transcript</h1>
+            <p>{{transcript}}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

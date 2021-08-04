@@ -1,0 +1,31 @@
+body {
+    background-color: teal;
+    color: white;
+    font-family: monospace;
+}
+
+
+#speechContainer {
+    text-align: center;
+}
+
+#speechContainer h1 {
+    font-size: 30px;
+}
+
+#file {
+    margin-left: 0%;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#file:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#submit {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
